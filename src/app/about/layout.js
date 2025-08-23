@@ -5,7 +5,12 @@ function Layout({ children }) {
     <div>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <ul className="flex gap-8 justify-center py-4">
+        <ul className="flex gap-8 md:gap-13 justify-center py-4">
+          <li>
+            <Link href="/" className="text-blue-600 font-medium hover:text-blue-800">
+              Home
+            </Link>
+          </li>
           <li>
             <Link href="/about/aboutCollege" className="text-blue-600 font-medium hover:text-blue-800">
               College

@@ -1,12 +1,13 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 function Page() {
+  const router = useRouter()
   const schools = [
     { name: "Springfield Public School", location: "Delhi, India" },
     { name: "St. Xavier’s High School", location: "Mumbai, India" },
     { name: "Green Valley International School", location: "Bangalore, India" },
     { name: "Sunrise Convent School", location: "Chennai, India" },
-    { name: "Hilltop Academy", location: "Pune, India" },
+    { name: "Hilltop Academy", location: "Pune, India" }
   ];
 
   return (
@@ -25,6 +26,9 @@ function Page() {
           </li>
         ))}
       </ul>
+      <div className="text-center mt-4">
+        <button onClick={()=>router.push('/')} className="px-6 py-1 bg-blue-400 text-white rounded my-4">Go Back</button>
+      </div>
     </div>
   );
 }
