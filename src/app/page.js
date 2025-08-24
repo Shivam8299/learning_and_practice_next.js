@@ -14,8 +14,8 @@ function Page() {
         Welcome to Home Page
       </h1>
       <p className="text-gray-600 mt-4 text-lg text-center max-w-xl">
-        Navigate through the app using the links below.  
-        Explore different pages and student details.
+        Navigate through the app using the links below. Explore different pages
+        and student details.
       </p>
 
       {/* Navigation Links */}
@@ -31,6 +31,12 @@ function Page() {
           href="/about"
         >
           Go to About Page
+        </Link>
+        <Link
+          className="text-lg text-emerald-700 font-medium hover:text-emerald-900 hover:underline transition"
+          href="/productlist"
+        >
+          Go to Product Page
         </Link>
       </div>
 
@@ -59,6 +65,18 @@ function Page() {
           onClick={() => router.push("/school")}
         >
           School Page
+        </button>
+        <button
+          className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl shadow-md hover:opacity-90 transition"
+          onClick={() => router.push("/productlist")}
+        >
+          product page
+        </button>
+        <button
+          className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl shadow-md hover:opacity-90 transition"
+          onClick={() => router.push("/users")}
+        >
+          users page
         </button>
       </div>
     </div>
