@@ -78,6 +78,12 @@ function Page() {
         >
           users page
         </button>
+        <button
+          className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-800 text-white rounded-xl shadow-md hover:opacity-90 transition"
+          onClick={() => router.push("/admin")}
+        >
+          Admin Page
+        </button>
       </div>
     </div>
   );
