@@ -84,6 +84,12 @@ function Page() {
         >
           Admin Page
         </button>
+        <button
+          className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-800 text-white rounded-xl shadow-md hover:opacity-90 transition"
+          onClick={() => router.push("/image")}
+        >
+          Image Page
+        </button>
       </div>
     </div>
   );
